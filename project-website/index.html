@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./style/nav.css"/>
+    <link rel="stylesheet" href="./style/index.css"/>
+    <link rel="stylesheet" href="./style/footer.css"/>
+    <title>PROJECT-WEBSITE</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class="fa-solid fa-bars sidebarOpen"></i>
+            <span class="logo">
+                <a href="#">6/12</a>
+            </span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo">
+                        <a href="./index.html">6/12</a>
+                    </span>
+                    <i class="fa-solid fa-x sidebarClose"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="products.html">所有商品</a></li>
+                    <li><a href="#">最新商品</a></li>
+                    <li><a href="#">熱銷商品</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="member-searchBox">
+                <div class="member">
+                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="search">
+                    <div class="searchToggle">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-x searchClose"></i>
+                    </div>
+                        <div class="search-field">
+                            <input type="text" placeholder="搜尋"/>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                  
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="slide-container">
+        <div class="slides">
+            <img src="./IMAGE/s-1.jpg" alt="" class="slide-active"/>
+            <img src="./IMAGE/s-2.jpg" alt=""/>
+            <img src="./IMAGE/s-3.jpg" alt=""/>
+            <img src="./IMAGE/s-4.jpg" alt=""/>
+            <img src="./IMAGE/s-5.jpg" alt=""/>
+        </div>
+        <button>
+            <span class="next">&#10095;</span>
+            <span class="prev">&#10094;</span>
+        </button>
+        <div class="dotContainer">
+            <div class="dot dot-active" attr='0' onclick="switchImage(this)"></div>
+            <div class="dot" attr='1' onclick="switchImage(this)"></div>
+            <div class="dot" attr='2' onclick="switchImage(this)"></div>
+            <div class="dot" attr='3' onclick="switchImage(this)"></div>
+            <div class="dot" attr='4' onclick="switchImage(this)"></div>
+        </div>
+    </div>
+
+    <article>
+        <div class="scrollingText">
+            <div>NEW</div>
+            <div>NEW</div>
+            <div>NEW</div>
+            <div>NEW</div>
+            <div>NEW</div>
+            <div>NEW</div>
+            <div>NEW</div>
+            <div>NEW</div>
+            <div>NEW</div>
+        </div>
+        
+    </article>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-leftbox">
+                <h2>CONTACT US</h2>
+                <p>info@gmail.com</p>
+                <h2>FOLLOW US</h2>
+                <div class="social">
+                    <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-centerbox">
+                <h2>JOIN OUR NEWSLETTER</h2>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button class="footer-btn" type="submit">Send</button>
+                </form>
+                
+            </div>
+            <div class="footer-rightbox">
+                <p>6/12</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./script/nav.js"></script>
+    <script src="./script/index.js"></script>
+</body>
+</html>

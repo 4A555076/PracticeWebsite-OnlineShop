@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./style/nav.css"/>
+    <link rel="stylesheet" href="./style/productDetail.css"/>
+    <link rel="stylesheet" href="./style/footer.css"/>
+    <title>商品詳細內容</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class="fa-solid fa-bars sidebarOpen"></i>
+            <span class="logo">
+                <a href="./index.html">6/12</a>
+            </span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo">
+                        <a href="#">6/12</a>
+                    </span>
+                    <i class="fa-solid fa-x sidebarClose"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="products.html">所有商品</a></li>
+                    <li><a href="#">最新商品</a></li>
+                    <li><a href="#">熱銷商品</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="member-searchBox">
+                <div class="member">
+                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="search">
+                    <div class="searchToggle">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-x searchClose"></i>
+                    </div>
+                        <div class="search-field">
+                            <input type="text" placeholder="搜尋"/>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                  
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="detail-container">
+        <div class="left-box">
+            <div class="main_image">
+                <img src="./IMAGE/E-1.jpg" alt="" class="detail-slide">
+            </div>
+            <div class="option flex">
+                <img src="./IMAGE/E-2.jpg" alt="" onclick="img('./IMAGE/E-2.jpg')">
+                <img src="./IMAGE/E-3.jpg" alt="" onclick="img('./IMAGE/E-3.jpg')">
+                <img src="./IMAGE/E-4.jpg" alt="" onclick="img('./IMAGE/E-4.jpg')">
+                <img src="./IMAGE/E-1.jpg" alt="" onclick="img('./IMAGE/E-2.jpg')">
+            </div>
+            
+        </div>
+        <div class="right-box">
+            <h3>棉質襯衫(長袖)</h3>
+            <h4><small>NT$990</small></h4>
+            <p>此款版型適中</p>
+            <p>舒適棉感且布料有挺度/肩膀處有抓皺呈自然澎袖感/喇叭袖口設計,可反摺</p>
+            <p>*實品顏色依單品照為主</p>
+            <p>棉 100%</p>
+            <p>厚薄:薄</p>
+            <p>彈性:無</p>
+            <p>素材產地 / 台灣</p>
+            <p>加工產地 / 台灣</p>
+            <h5>尺寸</h5>
+            <div class="size flex">
+                <button class="size-btn">S</button>
+                <button class="size-btn">M</button>
+                <button class="size-btn">L</button>
+                <button class="size-btn">XL</button>
+            </div>
+            <h5>數量</h5>
+            <div class="amount">
+                <span class="minus">-</span>
+                <span class="num">1</span>
+                <span class="plus">+</span>
+            </div>
+            <button class="add-btn"><i class="fa-solid fa-cart-shopping"></i>放入購物車</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-leftbox">
+                <h2>CONTACT US</h2>
+                <p>info@gmail.com</p>
+                <h2>FOLLOW US</h2>
+                <div class="social">
+                    <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-centerbox">
+                <h2>JOIN OUR NEWSLETTER</h2>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button class="footer-btn" type="submit">Send</button>
+                </form>
+                
+            </div>
+            <div class="footer-rightbox">
+                <p>6/12</p>
+            </div>
+        </div>
+    </footer>
+
+   <script src="./script/nav.js"></script> 
+   <script src="./script/productDetail.js"></script> 
+</body>
+</html>
