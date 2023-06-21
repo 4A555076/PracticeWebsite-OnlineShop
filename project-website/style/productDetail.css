@@ -55,6 +55,7 @@ h5{
 .size button{
     width: 25px;
     height: 25px;
+    color: black;
     background-color: white;
     border: 1px solid black;
     margin: 10px 10px 10px 0px;
@@ -117,6 +118,20 @@ h5{
     }
     .left-box {
         flex-direction: column;
+    }
+
+}
+@media (max-width:390px){
+    .left-box,.right-box{
+        width: 100%;
+        padding: 0;
+    }
+    .right-box{
+        margin-bottom: 50px;
+    }
+    .option img {
+        height: 70px;
+        padding: 10px 5px 0 0;
     }
 
 }
