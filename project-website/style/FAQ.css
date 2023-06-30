@@ -55,9 +55,6 @@ body{
 .tab{
     display: none;
 }
-.tab.hide{
-    display: none;
-}
 .tab.tab-active{
     display: block;
 }
