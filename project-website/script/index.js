@@ -18,9 +18,9 @@ function slide() {
 
 slide();
 
-// Previous button functionality
+
 prev.addEventListener("click", () => {
-    clearInterval(slideInterval); // Clear the automatic slide interval
+    clearInterval(slideInterval); 
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -32,9 +32,9 @@ prev.addEventListener("click", () => {
     slides[counter - 1].style.display = "block";
 });
 
-// Next button functionality
+
 next.addEventListener("click", () => {
-    clearInterval(slideInterval); // Clear the automatic slide interval
+    clearInterval(slideInterval); 
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -53,7 +53,7 @@ const position = 'right';
 
 style.innerHTML=`
 @keyframes my-animation{
-    0%{${position}:-${document.querySelector('.text').offsetWidth}px;}
+    0%{${position}:-${document.querySelector('.text')}px;}
     100%{${position}:100%;}
 }`;
 document.head.append(style);
